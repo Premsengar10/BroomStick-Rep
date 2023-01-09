@@ -1,0 +1,93 @@
+
+
+
+
+.Experience{
+    background-color: black;
+    color: aliceblue;
+}
+.Exp-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-decoration: underline #ff5e14;
+}
+.Exp-cards{
+    margin: 3%;
+}
+.slide-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* overflow: auto; */
+    /* animation: scrolling 7s linear infinite; */
+}
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.slide-content:hover {
+    animation-play-state: paused;
+}
+.card {
+    background: #111;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 10px; */
+    height: 100%;
+    width: 20%;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 10px solid #000;
+}
+.card .logo {
+    height: 110px;
+    width: 160px;
+    padding: 10px;
+}
+.card .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+}
+.card .package {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border: 1px solid #111;
+    border-radius: 8px;
+    transform: translateY(100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0); */
+    /* clip-path: polygon(0 0, 0 0, 100% 100%, 100% 100%); */
+    transition: all 0.3s;
+}
+.card:hover .package{
+    transform: translateY(0);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+}  
+@media (max-width: 801px) {
+    .card {
+        width: 50%;
+    }
+    @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.card .package {
+    font-size: 10px;
+}
+}

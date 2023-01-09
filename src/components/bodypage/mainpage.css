@@ -1,0 +1,110 @@
+.bodypage{
+ 
+    
+width: 100%;
+/* height: calc(100%-100px); */
+/* margin: 2%; */
+overflow-x: hidden;
+
+}
+body{
+  background-color: rgb(6, 6, 6);
+   height: calc(100%-100px);
+}
+.nameandImageSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.nameSection{
+    flex: 6;
+    
+  
+    padding: 10px 80px;
+}
+.nameSection h1{
+    color:white;
+    font-size: 80px;
+}
+.nameSection h3{
+    color: white;
+    font-size: 30px;
+}
+.buttonAndOther{
+    display: flex;
+    gap: 80px;
+    font-size: 20px;
+    color: white;
+
+    align-items: center;
+}
+.buttonAndOther button{
+    background: orangered;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+}
+.buttonAndOther button:hover{
+    background-color: rgb(188, 51, 1);
+}
+.buttonAndOther span{
+    font-size: 25px;
+}
+.Img{
+    width: 50%;
+    height: auto;
+}
+.imageSection{
+    /* width: 50vw; */
+    margin: 2%;
+  
+ 
+
+}
+.imageSection img{
+    width: 90%;
+    height: auto;
+}
+
+
+@media
+/* (min-width:300px) and */
+ (max-width:649px){
+    .nameandImageSection{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+
+}
+.nameSection h1{
+    
+    font-size: 50px;
+}
+.nameSection h3{
+    font-size: 15px;
+}
+.buttonAndOther{
+    margin-top: 30px;
+}
+.imageContainer{
+    margin-top: 10px;
+}
+.imageContainer img{
+height: 350px;
+width: 360px;
+}
+.nameSection{
+    padding: 10px 20px;
+}
+
+
+
+}
