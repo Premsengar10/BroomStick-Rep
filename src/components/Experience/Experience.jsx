@@ -26,9 +26,10 @@ const Experience = () => {
                 <div className="Exp-heading">
                     <span>We are Associated with</span>
                 </div>
-                <div className="Exp-cards">
-                <div className="row justify-content-center">
-                    <div class="card col-lg-3">
+                <div className="cards-container">
+                <div class="slide-content">
+                {/* <div className="row justify-content-center"> */}
+                    <div class="card ">
                         <div class="logo">
                             <img src={Elevate} />
                         </div>
@@ -37,7 +38,7 @@ const Experience = () => {
                         </div>
                     </div>
                     
-                    <div class="card col-lg-3">
+                    <div class="card ">
                         <div class="logo">
                             <img src={SKarnataka} />
                         </div>
@@ -47,7 +48,7 @@ const Experience = () => {
                     </div>
                 
                     
-                    <div class="card col-lg-3">
+                    <div class="card ">
                         <div class="logo">
                             <img src={NieUniversity} />
                         </div>
@@ -56,7 +57,7 @@ const Experience = () => {
                         </div>
                     </div>
                    
-                    <div class="card col-lg-3">
+                    <div class="card ">
                         <div class="logo">
                             <img src={TieMysuru} />
                         </div>
@@ -64,10 +65,10 @@ const Experience = () => {
                             <div><a href="">Visit Website</a></div>
                         </div>
                     </div>
-                </div>
-                <div className="row justify-content-center">
+                {/* </div> */}
+                {/* <div className="row justify-content-center"> */}
 
-                    <div class="card col-lg-3">
+                    <div class="card ">
                         <div class="logo">
                             <img src={MathWorks} />
                         </div>
@@ -77,7 +78,7 @@ const Experience = () => {
                     </div>
 
 
-                    <div class="card col-lg-3">
+                    <div class="card ">
                         <div class="logo">
                             <img src={Ktech} />
                         </div>
@@ -87,7 +88,7 @@ const Experience = () => {
                     </div>
 
 
-                    <div class="card col-lg-3">
+                    <div class="card ">
                         <div class="logo">
                             <img src={SFAL} />
                         </div>
